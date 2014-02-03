@@ -2,7 +2,7 @@
 
 <img src="http://asleepwalker.ru/uploads/shortlinkandqrcode.png" alt="shortlinkandqrcode" />
 
-As you can see, an extension based on Google URL Shortener ([goo.gl][]).
+As you can see, an extension based on Google URL Shortener ([goo.gl][]).<br>
 And JS-based [QR-code generator][] was written by [davidshimjs][].
 
  [goo.gl]: http://goo.gl/
