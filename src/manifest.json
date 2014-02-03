@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "Short URL and QR code generator",
+	"version": "1.0",
+
+	"permissions": [
+		"tabs"
+	],
+
+	"browser_action": {
+		"default_title": "Generate short URL",
+		"default_popup": "popup.html"
+	}
+}
