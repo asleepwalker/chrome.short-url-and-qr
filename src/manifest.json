@@ -4,12 +4,20 @@
 	"name": "Short URL and QR code generator",
 	"version": "1.0",
 
+	"icons": {
+		"16": "16x16.png",
+		"32": "32x32.png",
+		"48": "48x48.png",
+		"128": "128x128.png"
+	},
+
 	"permissions": [
 		"tabs"
 	],
 
 	"browser_action": {
 		"default_title": "Generate short URL",
+		"default_icon": "button.png",
 		"default_popup": "popup.html"
 	}
 }
