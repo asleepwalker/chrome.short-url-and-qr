@@ -12,7 +12,8 @@ chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
 			var response = JSON.parse(xmlhttp.responseText);
 			document.getElementById('url').value = response.id;
 			new QRCode(document.getElementById('qr'), { text: response.id, width: 128, height: 128 }); // generating QR by qrcode.js
-			document.getElementById('qr').style.borderColor = '#fff';
-		}
+			document.getElementById('qr').className = 'done'; // remove frame and loader
+			document.getElementById('url').removeAttribute('readonly');
+		} else document.getElementById('qr').className = 'error'; // smth went wrong
 	}
 });

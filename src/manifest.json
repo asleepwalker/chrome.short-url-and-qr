@@ -2,13 +2,13 @@
 	"manifest_version": 2,
 
 	"name": "Short URL and QR code generator",
-	"version": "1.0",
+	"version": "1.1",
 
 	"icons": {
-		"16": "16x16.png",
-		"32": "32x32.png",
-		"48": "48x48.png",
-		"128": "128x128.png"
+		"16": "i/16x16.png",
+		"32": "i/32x32.png",
+		"48": "i/48x48.png",
+		"128": "i/128x128.png"
 	},
 
 	"permissions": [
@@ -17,7 +17,7 @@
 
 	"browser_action": {
 		"default_title": "Generate short URL",
-		"default_icon": "button.png",
+		"default_icon": "i/button.png",
 		"default_popup": "popup.html"
 	}
 }
