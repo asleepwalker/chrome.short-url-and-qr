@@ -1,3 +1,9 @@
+/*
+*	Typographie extension for Google Chrome, v1.1
+*	(c) 2014 Artyom "Sleepwalker" Fedosov <mail@asleepwalker.ru>
+*	https://github.com/asleepwalker/chrome.typographie
+*/
+
 chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
 	var longUrl = tabs[0].url; // from active tab
 	var xmlhttp = new XMLHttpRequest();

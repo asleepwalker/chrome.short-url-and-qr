@@ -1,9 +1,9 @@
-**Short URL and QR-code generator for Google Chrome**
+#Short URL and QR-code generator for Google Chrome
 
 <img src="http://asleepwalker.ru/uploads/shortlinkandqrcode.png" alt="shortlinkandqrcode" />
 
-As you can see, the extension based on Google URL Shortener ([goo.gl][]).<br>
-And JS-based [QR-code generator][] was written by [davidshimjs][].
+The extension based on Google URL Shortener ([goo.gl][]).<br>
+JS-based [QR-code generator][] was written by [davidshimjs][].
 
  [goo.gl]: http://goo.gl/
  [QR-code generator]: https://github.com/davidshimjs/qrcodejs
