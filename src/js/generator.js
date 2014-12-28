@@ -1,7 +1,7 @@
 /*
-*	Typographie extension for Google Chrome, v1.1
+*	Short URL and QR-code generator for Google Chrome, v1.1
 *	(c) 2014 Artyom "Sleepwalker" Fedosov <mail@asleepwalker.ru>
-*	https://github.com/asleepwalker/chrome.typographie
+*	https://github.com/asleepwalker/chrome.short-url-and-qr
 */
 
 chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
