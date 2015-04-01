@@ -1,5 +1,5 @@
 /*
-*	Short URL and QR-code generator for Google Chrome, v1.1
+*	Short URL and QR-code generator for Google Chrome, v1.2
 *	(c) 2014–2015 Artyom "Sleepwalker" Fedosov <mail@asleepwalker.ru>
 *	https://github.com/asleepwalker/chrome.short-url-and-qr
 */
@@ -7,7 +7,7 @@
 chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
 	var longUrl = tabs[0].url; // from active tab
 	var xmlhttp = new XMLHttpRequest();
-	var url = 'https://www.googleapis.com/urlshortener/v1/url'; // goo.gl API
+	var url = 'https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCJc796c9LKjvtqIOmE7C06VW30yvfawQc';
 	var data = '{"longUrl":"'+longUrl+'"}';
 	xmlhttp.open('POST', url, true);
 	xmlhttp.setRequestHeader('Content-type', 'application/json');

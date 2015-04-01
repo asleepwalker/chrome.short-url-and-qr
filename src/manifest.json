@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "Short URL and QR code generator",
-	"version": "1.1",
+	"version": "1.2",
 
 	"icons": {
 		"16": "i/16x16.png",
