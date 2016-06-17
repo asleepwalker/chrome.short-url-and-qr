@@ -16,6 +16,7 @@ chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {
 	xmlhttp.onreadystatechange = function() {
 		var qr = document.getElementById('qr');
 		var input = document.getElementById('url');
+		var msg = document.getElementById('msg');
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			var response = JSON.parse(xmlhttp.responseText);
 			input.value = response.id;
@@ -25,6 +26,16 @@ chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {
 				height: 128
 			});
 			qr.className = 'done';
+
+			input.parentElement.onclick = function() {
+				input.select();
+				if (document.execCommand('copy')) {
+					msg.className = 'visible';
+					setTimeout(function() {
+						msg.className = '';
+					}, 2000);
+				}
+			};
 		} else {
 			qr.className = 'error';
 		}

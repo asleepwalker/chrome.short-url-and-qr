@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<style type="text/css">
-			#url { width: 128px; }
+			#input { position: relative; }
+			#url { cursor: pointer; width: 128px; }
+			#msg { background: #1880FF; bottom: 0; color: white; display: none; left: 0; padding: 3px 6px; position: absolute; right: 0; text-align: center; top: 0; }
+			#msg.visible { display: block; }
 			#qr { background: #EEE url('i/loader.gif') center center no-repeat; border: 1px dashed #aaa; height: 128px; margin-bottom: 8px; position: relative; width: 128px; }
 			#qr.done { background: none; border: none; }
 			#qr.error { background: #f3e7e7; border-color: #b00 !important; position: relative; text-align: center; }
@@ -12,7 +15,10 @@
 	</head>
 	<body>
 		<div id="qr"></div>
-		<input id="url" type="text" readonly>
+		<div id="input">
+			<div id="msg">Copied to clipboard</div>
+			<input id="url" type="text" readonly>
+		</div>
 		<script src="js/qrcode.min.js"></script>
 		<script src="js/generator.js"></script>
 	</body>
