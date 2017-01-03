@@ -1,6 +1,6 @@
 /*
 *	Short URL and QR-code generator for Google Chrome, v1.3
-*	(c) 2014–2016 Artyom "Sleepwalker" Fedosov <mail@asleepwalker.ru>
+*	(c) 2014–2017 Artyom "Sleepwalker" Fedosov <mail@asleepwalker.ru>
 *	https://github.com/asleepwalker/chrome.short-url-and-qr
 */
 
